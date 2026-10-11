@@ -1,0 +1,169 @@
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    width: 90%;
+    max-width: 900px;
+    padding: 50px;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #333333;
+    }
+
+    p {
+      font-size: 14px;
+      color: #777777;
+    }
+
+    strong {
+      font-size: 26px;
+      font-weight: 700;
+      color: #333333;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 30px;
+    color: #777777;
+    cursor: pointer;
+
+    &:hover {
+      color: #222222;
+    }
+  }
+
+  &__image {
+    width: 250px;
+    height: 280px;
+    object-fit: contain;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__details {
+    color: #3442b5;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-width: 140px;
+    padding: 8px;
+
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    button {
+      border: none;
+      background: transparent;
+
+      font-size: 24px;
+      color: #333333;
+      cursor: pointer;
+
+      &:hover {
+        color: #3442b5;
+      }
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: 600;
+      color: #222222;
+    }
+  }
+
+  &__buy {
+    flex: 1;
+    padding: 15px;
+
+    border: none;
+    border-radius: 6px;
+    background-color: #ffcc00;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: #222222;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #e6b800;
+    }
+  }
+
+  @media (max-width: 700px) {
+    &__content {
+      flex-direction: column;
+      gap: 20px;
+
+      width: 100%;
+      padding: 40px 20px 25px;
+
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    &__image {
+      width: 180px;
+      height: 200px;
+    }
+
+    &__info {
+      width: 100%;
+    }
+
+    &__actions {
+      flex-wrap: wrap;
+    }
+
+    &__buy {
+      min-width: 140px;
+    }
+  }
+}

@@ -1,31 +1,124 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Teste Técnico Front-End — Econverse
 
-### Vem ser #Econverse!
+Projeto desenvolvido como parte do processo seletivo para a vaga de **Desenvolvedor Front-End** da Econverse.
 
-Segue abaixo as instruções para a execução do teste.
+O objetivo foi desenvolver uma página de e-commerce com base no layout disponibilizado no Figma, utilizando React, TypeScript e SCSS, além de consumir uma API de produtos.
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail gustavo.cipriano@econverse.com.br com o título **Teste Vaga FrontEnd**
+## Tecnologias utilizadas
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+- React
+- TypeScript
+- Vite
+- SCSS
+- React Icons
+- Lucide React
+- Fetch API
+- Git e GitHub
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+## Funcionalidades
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+- Header com navegação e campo de pesquisa.
+- Banner promocional de Black Friday.
+- Seção de categorias de produtos.
+- Vitrines com quatro produtos por seção.
+- Consumo de API para exibição dos produtos.
+- Modal para visualização das informações dos produtos.
+- Seções de parceiros e marcas.
+- Newsletter com validação dos campos e aceite dos termos.
+- Footer com informações institucionais e redes sociais.
+- Layout com adaptações para diferentes tamanhos de tela.
 
-**Boa sorte! ;)**
+**Observação:** o formulário da newsletter realiza validação no front-end, sem integração com um serviço de cadastro.
+
+## Como executar o projeto
+
+### Pré-requisitos
+
+É necessário ter o Node.js e o npm instalados.
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/GuilhermeAZampar/teste-front-end.git
+```
+
+### 2. Acessar a pasta
+
+```bash
+cd teste-front-end
+```
+
+### 3. Instalar as dependências
+
+```bash
+npm install
+```
+
+### 4. Executar em ambiente de desenvolvimento
+
+```bash
+npm run dev
+```
+
+Abra no navegador o endereço informado pelo Vite no terminal.
+
+## Compilação para produção
+
+Execute:
+
+```bash
+npm run build
+```
+
+O comando realiza a compilação do TypeScript e gera os arquivos otimizados na pasta `dist`.
+
+## Como testar
+
+Para visualizar a versão compilada localmente, execute:
+
+```bash
+npm run preview
+```
+
+Os testes funcionais podem ser realizados manualmente, verificando:
+
+- Carregamento dos produtos da API.
+- Exibição de quatro produtos por vitrine.
+- Abertura e fechamento do modal.
+- Validação do formulário da newsletter.
+- Navegação e apresentação dos componentes.
+- Comportamento do layout em diferentes resoluções.
+
+A compilação de produção foi executada com sucesso por meio do comando `npm run build`.
+
+## API utilizada
+
+Os produtos são obtidos a partir do endpoint fornecido para o teste técnico:
+
+https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json
+
+Durante o desenvolvimento, foi configurado um proxy no Vite para contornar restrições de CORS no ambiente local.
+
+## Transparência sobre o uso de inteligência artificial
+
+Durante o desenvolvimento deste projeto, enfrentei dificuldades significativas na **estilização com SCSS**, pois CSS e desenvolvimento visual não são atualmente meus pontos mais fortes.
+
+Por esse motivo, utilizei **inteligência artificial como ferramenta de apoio em aproximadamente 90% do trabalho de estilização**, especialmente na criação e nos ajustes das regras SCSS, organização visual dos componentes, espaçamentos e responsividade.
+
+A utilização de IA foi importante para conseguir reproduzir o layout proposto no Figma e compreender melhor a aplicação dos estilos.
+
+Também utilizei o desenvolvimento do projeto como oportunidade para praticar React, TypeScript, componentes, estados, eventos e integração com API.
+
+Considero importante apresentar essa informação de maneira transparente, reconhecendo tanto o auxílio das ferramentas utilizadas quanto os conhecimentos que ainda preciso desenvolver.
+
+Meu principal foco de estudos e desenvolvimento é o **Back-End com Python**, mas tenho interesse em ampliar meus conhecimentos e minha experiência com tecnologias Front-End.
+
+## Repositório
+
+https://github.com/GuilhermeAZampar/teste-front-end
+
+## Autor
+
+**Guilherme Alves Zampar**
+
+Desenvolvedor com foco em Back-End Python e conhecimentos em desenvolvimento Full Stack.
